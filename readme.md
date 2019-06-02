@@ -1,10 +1,25 @@
-#Instructions
+## How to run selenium test using gradle testng
 
-## Quick Start
 
-1. Ensure current JDK is installed (nothing else is required -- other dependencies will automatically download )
-2. To run tests with Chrome run: ./gradlew
-3. To tun tests with PhatomJS(Headless) run: ./gradlew testPhantomJs
+#### Install JAVA (any provider, openjdk or oracle java)
+
+#### Clone the project from
+          $ git clone https://github.com/dexterm/testng-selenium-gradle-chrome-firefox.git
+If you wish to run gradle from any folder then export PATH environment variable
+          $ export PATH=$PATH:/opt/gradle/gradle-4.10.2/bin
+Change the gradle path to match the folder in your system
+Optionally you can add the path to .bashrc
+
+1. Open the `.bashrc` file in your home directory (for example, `/home/your-user-name/.bashrc`) in a text editor.
+2. Add `export PATH=$PATH:/opt/gradle/gradle-4.10.2/bin` to the last line of the file, where *your-dir* is the directory you want to add.
+3. Save the `.bashrc` file.
+4. Restart your terminal.
+
+#### Launch a test using chrome browser
+          $ ./gradlew testChrome
+
+#### Launch a headless test using phantomJS
+          $ ./gradlew testPhantomJs
 
 ## Notes
 
